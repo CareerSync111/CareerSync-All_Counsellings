@@ -1,30 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Career Sync - Expert Counselling Program</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #00c6ff, #0072ff);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .logo {
+      width: 180px;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-top: 1rem;
+      animation: slideDown 1s ease-out;
+    }
+
+    p {
+      max-width: 700px;
+      text-align: center;
+      margin: 1rem auto 2rem;
+      font-size: 1.1rem;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .btn {
+      background: white;
+      color: #0072ff;
+      font-weight: 600;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="Career Sync Logo" class="logo" />
-    <h1>Career Sync</h1>
-    <p>In “Expert Counselling Program” We cover almost all the reputed national & state level counsellings. It Includes</p>
-    <div class="buttons">
-      <a href="https://josaa-predictor-2025-mbv1-git-main-anantamemories-projects.vercel.app/" class="btn">JoSAA Counselling</a>
-      <a href="#" class="btn">CSAB Counselling</a>
-      <a href="#" class="btn">JOSAA For IIT’s</a>
-      <a href="#" class="btn">JAC Delhi</a>
-      <a href="#" class="btn">JAC Chandigarh</a>
-      <a href="https://mpdte-counselling-git-main-anantamemories-projects.vercel.app/" class="btn">MPDTE, MP Counselling</a>
-      <a href="#" class="btn">UPTAC, UP Counselling</a>
-      <a href="#" class="btn">PTU Counselling</a>
-      <a href="#" class="btn">HBTU Counselling</a>
-      <a href="#" class="btn">MAHCET Counselling</a>
-      <a href="https://reap-counselling.vercel.app/" class="btn">REAP Counselling</a>
-    </div>
+  <img src="Untitled_design__1_-removebg-preview (1).png" alt="Career Sync Logo" class="logo">
+  <h1>Career Sync: Expert Counselling Program</h1>
+  <p>We cover almost all the reputed national & state level counselling programs to guide students towards their best career path.</p>
+
+  <div class="button-grid">
+    <a class="btn" href="https://josaa-predictor-2025-mbv1-git-main-anantamemories-projects.vercel.app/" target="_blank">JoSAA Counselling</a>
+    <a class="btn" href="#">CSAB Counselling</a>
+    <a class="btn" href="#">JOSAA For IIT’s</a>
+    <a class="btn" href="#">JAC Delhi</a>
+    <a class="btn" href="#">JAC Chandigarh</a>
+    <a class="btn" href="https://mpdte-counselling-git-main-anantamemories-projects.vercel.app/" target="_blank">MPDTE, MP Counselling</a>
+    <a class="btn" href="#">UPTAC, UP Counselling</a>
+    <a class="btn" href="#">PTU Counselling</a>
+    <a class="btn" href="#">HBTU Counselling</a>
+    <a class="btn" href="#">MAHCET Counselling</a>
+    <a class="btn" href="https://reap-counselling.vercel.app/" target="_blank">REAP Counselling</a>
   </div>
 </body>
 </html>
